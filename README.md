@@ -1,5 +1,4 @@
-# feather-svelte
-Simple library for using (Feather icons)[https://feathericons.com] as components to your Svelte application.
+# feather-svelte Simple library for using (Feather icons)[https://feathericons.com] as components to your Svelte application.
 
 ## installation
 ```bash
@@ -9,7 +8,6 @@ npm i feather-svelte
 ## installation
 ### General usage
 ```svelte
-// Component.svelte
 <script>
     import { Activity } from 'feather-svelte';
 
@@ -19,9 +17,9 @@ npm i feather-svelte
 ### Namespaced
 ```svelte
 <script>
-import * as Icon from 'feather-svelte';
+    import * as Icon from 'feather-svelte';
 
-<Icon.Activity [props here] />
+    <Icon.Activity [props here] />
 </script>
 ```
 
