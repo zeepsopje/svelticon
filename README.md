@@ -1,15 +1,18 @@
-# feather-svelte Simple library for using (Feather icons)[https://feathericons.com] as components to your Svelte application.
+# svelticon
+Library for using icon packs as components to your Svelte application.
+
+This is a work in progress. Currently only feather icons is supported.
 
 ## installation
 ```bash
-npm i feather-svelte
+npm i svelticon
 ```
 
 ## installation
 ### General usage
 ```svelte
 <script>
-    import { Activity } from 'feather-svelte';
+    import { Activity } from 'svelticon';
 
     <Activity [props here] />
 </script>
@@ -17,28 +20,14 @@ npm i feather-svelte
 ### Namespaced
 ```svelte
 <script>
-    import * as Icon from 'feather-svelte';
+    import * as Icon from 'svelticon';
 
     <Icon.Activity [props here] />
 </script>
 ```
+## Supported icon packs
+- (Feather icons)[https://feathericons.com]
 
 ## Supported props
-<table>
-    <tr>
-        <th>Prop</th>
-        <th>Supported?</th>
-    </tr>
-    <tr>
-        <td>Size</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <td>Color</td>
-        <td>Yes</td>
-    </tr>
-    <tr>
-        <td>Stroke width</td>
-        <td>No</td>
-    </tr>
-</table>
+- `size`
+- `color`
