@@ -3,12 +3,12 @@ Library for using icon packs as components to your Svelte application.
 
 This is a work in progress. Currently only feather icons is supported.
 
-## installation
+## Installation
 ```bash
-npm i svelticon
+npm i -D svelticon
 ```
 
-## installation
+## Usage
 ### General usage
 ```svelte
 <script>
