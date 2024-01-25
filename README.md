@@ -26,7 +26,7 @@ npm i -D svelticon
 </script>
 ```
 ## Supported icon packs
-- (Feather icons)[https://feathericons.com]
+- [Feather icons](https://feathericons.com)
 
 ## Supported props
 - `size`
