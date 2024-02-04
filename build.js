@@ -33,8 +33,8 @@ const indexFileContent = `
 `;
 
 // Create files
-fs.writeFileSync('./src/lib/index.js', indexFileContent);
 fs.mkdirSync('src/lib/icons', { recursive: true });
+fs.writeFileSync('./src/lib/index.js', indexFileContent);
 
 for (let icon of Object.keys(icons)) {
 	fs.writeFileSync(`./src/lib/icons/${pascalCase(icon)}.svelte`, fromTemplate(icon));
