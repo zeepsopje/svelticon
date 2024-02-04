@@ -1,4 +1,5 @@
-/src/lib
+/src/lib/icons
+/src/lib/index.js
 
 .DS_Store
 node_modules
