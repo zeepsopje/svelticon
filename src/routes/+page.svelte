@@ -1,9 +1,12 @@
 <script>
-	import * as Icon from "$lib";
+	import * as Feather from '$lib/icons/feather';
+
+	const packs = [
+		'feather',
+		'bootstrap',
+	];
+
+	let selectedPack = 'feather';
 </script>
 
-<Icon.Github
-	size={24}
-	color="#000FFF"
-	href="https://github.com/zeepsopje"
-/>
+<Feather.Activity />
