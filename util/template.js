@@ -1,26 +1,28 @@
 export default function template(inner, viewBox) {
-	return `<script>
-				import Link from '$lib/Link.svelte';
+	return `
+		<script>
+			import Link from '$lib/Link.svelte';
 
-				export let size = 24;
-				export let color = '#000000';
-				export let href;
-				export let target = '_blank';
-			</script>
+			export let size = 24;
+			export let color = '#000000';
+			export let href = false;
+			export let target = '_blank';
+		</script>
 
-			<Link {href} {target}>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width={size}
-					height={size}
-					viewBox="${viewBox}"
-					fill="none"
-					stroke={color}
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-				>
-				${inner}
-				</svg>
-			</Link>`;
+		<Link {href} {target}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width={size}
+				height={size}
+				viewBox="${viewBox}"
+				fill="none"
+				stroke={color}
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			>
+			${inner}
+			</svg>
+		</Link>
+`;
 }

@@ -15,6 +15,6 @@ fs.mkdirSync('src/lib/icons/feather', { recursive: true });
 fs.writeFileSync('./src/lib/icons/feather/index.js', indexFileContent);
 
 // Create icon files
-for (let icon of Object.keys(icons)) {
-	fs.writeFileSync(`./src/lib/icons/feather/${pascalCase(icon)}.svelte`, template(icon, "0 0 24 24"));
+for (const [name, icon]  of Object.entries(icons)) {
+	fs.writeFileSync(`./src/lib/icons/feather/${pascalCase(name)}.svelte`, template(icon, "0 0 24 24"));
 }
