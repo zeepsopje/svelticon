@@ -4,6 +4,7 @@ export default function template(inner, viewBox) {
 			import Link from '$lib/Link.svelte';
 
 			export let size = 24;
+			export let tickness = 1;
 			export let color = '#000000';
 			export let href = false;
 			export let target = '_blank';
@@ -17,7 +18,7 @@ export default function template(inner, viewBox) {
 				viewBox="${viewBox}"
 				fill="none"
 				stroke={color}
-				stroke-width="2"
+				stroke-width={tickness}
 				stroke-linecap="round"
 				stroke-linejoin="round"
 			>
